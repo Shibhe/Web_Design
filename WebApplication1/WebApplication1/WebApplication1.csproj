@@ -1,0 +1,290 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB9B23C3-AFF7-42BA-9696-B96635AC4873}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="TOPBuilder\.vs\config\applicationhost.config" />
+    <Content Include="TOPBuilder\.vs\ProjectSettings.json" />
+    <Content Include="TOPBuilder\.vs\slnx.sqlite" />
+    <Content Include="TOPBuilder\.vs\TOPBuilder\v15\.suo" />
+    <Content Include="TOPBuilder\.vs\VSWorkspaceState.json" />
+    <Content Include="TOPBuilder\css\style.css.map" />
+    <Content Include="TOPBuilder\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="TOPBuilder\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="TOPBuilder\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="TOPBuilder\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="TOPBuilder\scss\style.scss" />
+    <Content Include="TOPBuilder\scss\_404.scss" />
+    <Content Include="TOPBuilder\scss\_about.scss" />
+    <Content Include="TOPBuilder\scss\_achievments.scss" />
+    <Content Include="TOPBuilder\scss\_blog.scss" />
+    <Content Include="TOPBuilder\scss\_builder.scss" />
+    <Content Include="TOPBuilder\scss\_call.scss" />
+    <Content Include="TOPBuilder\scss\_construction.scss" />
+    <Content Include="TOPBuilder\scss\_contact.scss" />
+    <Content Include="TOPBuilder\scss\_feature.scss" />
+    <Content Include="TOPBuilder\scss\_footer.scss" />
+    <Content Include="TOPBuilder\scss\_gallery.scss" />
+    <Content Include="TOPBuilder\scss\_header.scss" />
+    <Content Include="TOPBuilder\scss\_min-blog.scss" />
+    <Content Include="TOPBuilder\scss\_offer.scss" />
+    <Content Include="TOPBuilder\scss\_prefix.scss" />
+    <Content Include="TOPBuilder\scss\_responsive.scss" />
+    <Content Include="TOPBuilder\scss\_services.scss" />
+    <Content Include="TOPBuilder\scss\_slider.scss" />
+    <Content Include="TOPBuilder\scss\_team.scss" />
+    <Content Include="TOPBuilder\scss\_testimonial.scss" />
+    <Content Include="TOPBuilder\scss\_variables.scss" />
+    <Content Include="TOPBuilder\vendors\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="TOPBuilder\vendors\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="TOPBuilder\vendors\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="TOPBuilder\vendors\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="TOPBuilder\vendors\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="TOPBuilder\vendors\linearicons\fonts\Linearicons-Free.eot" />
+    <Content Include="TOPBuilder\vendors\linearicons\fonts\Linearicons-Free.ttf" />
+    <Content Include="TOPBuilder\vendors\linearicons\fonts\Linearicons-Free.woff" />
+    <Content Include="TOPBuilder\vendors\linearicons\fonts\Linearicons-Free.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TOPBuilder\404.html" />
+    <Content Include="TOPBuilder\about-2.html" />
+    <Content Include="TOPBuilder\about.html" />
+    <Content Include="TOPBuilder\blog-2.html" />
+    <Content Include="TOPBuilder\blog.html" />
+    <Content Include="TOPBuilder\contact.html" />
+    <Content Include="TOPBuilder\css\404.css" />
+    <Content Include="TOPBuilder\css\bootstrap.min.css" />
+    <Content Include="TOPBuilder\css\style.css" />
+    <Content Include="TOPBuilder\favicon.ico" />
+    <Content Include="TOPBuilder\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="TOPBuilder\images\about_client.jpg" />
+    <Content Include="TOPBuilder\images\achievments.jpg" />
+    <Content Include="TOPBuilder\images\achievments_bg.jpg" />
+    <Content Include="TOPBuilder\images\banner-bg.jpg" />
+    <Content Include="TOPBuilder\images\blog\blog_hed-1.jpg" />
+    <Content Include="TOPBuilder\images\blog\lb-1.jpg" />
+    <Content Include="TOPBuilder\images\blog\lb-2.jpg" />
+    <Content Include="TOPBuilder\images\blog\lb-3.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-1.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-2.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-3.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-4.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-5.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-6.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-7.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-8.jpg" />
+    <Content Include="TOPBuilder\images\blog\renovation\r-9.jpg" />
+    <Content Include="TOPBuilder\images\blog\rs-1.jpg" />
+    <Content Include="TOPBuilder\images\blog\rs-2.jpg" />
+    <Content Include="TOPBuilder\images\blog\rs-3.jpg" />
+    <Content Include="TOPBuilder\images\client_logo\client_logo-1.png" />
+    <Content Include="TOPBuilder\images\client_logo\client_logo-2.png" />
+    <Content Include="TOPBuilder\images\client_logo\client_logo-3.png" />
+    <Content Include="TOPBuilder\images\client_logo\client_logo-4.png" />
+    <Content Include="TOPBuilder\images\client_logo\client_logo-5.png" />
+    <Content Include="TOPBuilder\images\cns-1.jpg" />
+    <Content Include="TOPBuilder\images\cns-2.jpg" />
+    <Content Include="TOPBuilder\images\cns-3.jpg" />
+    <Content Include="TOPBuilder\images\construction-2.jpg" />
+    <Content Include="TOPBuilder\images\construction.jpg" />
+    <Content Include="TOPBuilder\images\contruction.jpg" />
+    <Content Include="TOPBuilder\images\favicon.png" />
+    <Content Include="TOPBuilder\images\feature-man-2.jpg" />
+    <Content Include="TOPBuilder\images\feature-man-3.jpg" />
+    <Content Include="TOPBuilder\images\feature-man-4.jpg" />
+    <Content Include="TOPBuilder\images\feature-man.jpg" />
+    <Content Include="TOPBuilder\images\footer-logo.png" />
+    <Content Include="TOPBuilder\images\footer.jpg" />
+    <Content Include="TOPBuilder\images\gallery\gl-1.jpg" />
+    <Content Include="TOPBuilder\images\gallery\gl-2.jpg" />
+    <Content Include="TOPBuilder\images\gallery\gl-3.jpg" />
+    <Content Include="TOPBuilder\images\gallery\gl-4.jpg" />
+    <Content Include="TOPBuilder\images\gallery\gl-5.jpg" />
+    <Content Include="TOPBuilder\images\gallery\gl-6.jpg" />
+    <Content Include="TOPBuilder\images\gallery\gl-7.jpg" />
+    <Content Include="TOPBuilder\images\gallery\gl-8.jpg" />
+    <Content Include="TOPBuilder\images\gallery\sv-1.jpg" />
+    <Content Include="TOPBuilder\images\gallery\sv-2.jpg" />
+    <Content Include="TOPBuilder\images\gallery\sv-3.jpg" />
+    <Content Include="TOPBuilder\images\gallery\sv-4.jpg" />
+    <Content Include="TOPBuilder\images\gallery\sv-5.jpg" />
+    <Content Include="TOPBuilder\images\gallery\sv-6.jpg" />
+    <Content Include="TOPBuilder\images\logo.png" />
+    <Content Include="TOPBuilder\images\preloader.gif" />
+    <Content Include="TOPBuilder\images\project.jpg" />
+    <Content Include="TOPBuilder\images\protfolio_bg.jpg" />
+    <Content Include="TOPBuilder\images\slider-1.jpg" />
+    <Content Include="TOPBuilder\images\slider-2.jpg" />
+    <Content Include="TOPBuilder\images\survey.jpg" />
+    <Content Include="TOPBuilder\images\team\tm-1.jpg" />
+    <Content Include="TOPBuilder\images\team\tm-2.jpg" />
+    <Content Include="TOPBuilder\images\team\tm-3.jpg" />
+    <Content Include="TOPBuilder\images\team\tm-4.jpg" />
+    <Content Include="TOPBuilder\images\team\tm-5.jpg" />
+    <Content Include="TOPBuilder\images\team\tm-6.jpg" />
+    <Content Include="TOPBuilder\images\team\tm-7.jpg" />
+    <Content Include="TOPBuilder\images\team\tm-8.jpg" />
+    <Content Include="TOPBuilder\images\testimonial-1.jpg" />
+    <Content Include="TOPBuilder\images\testimonial-2.jpg" />
+    <Content Include="TOPBuilder\images\testimonial-3.jpg" />
+    <Content Include="TOPBuilder\images\testimonial-4.jpg" />
+    <Content Include="TOPBuilder\index-2.html" />
+    <Content Include="TOPBuilder\index.html" />
+    <Content Include="TOPBuilder\js\bootstrap.min.js" />
+    <Content Include="TOPBuilder\js\google_map.js" />
+    <Content Include="TOPBuilder\js\html5shiv.min.js" />
+    <Content Include="TOPBuilder\js\jquery-1.12.0.min.js" />
+    <Content Include="TOPBuilder\js\min\theme.min.js" />
+    <Content Include="TOPBuilder\js\respond.min.js" />
+    <Content Include="TOPBuilder\js\theme.js" />
+    <Content Include="TOPBuilder\services-2.html" />
+    <Content Include="TOPBuilder\services.html" />
+    <Content Include="TOPBuilder\vendors\animate\animate.css" />
+    <Content Include="TOPBuilder\vendors\animate\wow.min.js" />
+    <Content Include="TOPBuilder\vendors\camera-slider\camera.css" />
+    <Content Include="TOPBuilder\vendors\camera-slider\camera.min.js" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\blank.gif" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\camera-loader.gif" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\camera_skins.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\next.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay1.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay10.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay2.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay3.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay4.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay5.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay6.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay7.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay8.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\patterns\overlay9.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\images\prev.png" />
+    <Content Include="TOPBuilder\vendors\camera-slider\jquery.easing.1.3.js" />
+    <Content Include="TOPBuilder\vendors\Counter-Up\jquery.counterup.min.js" />
+    <Content Include="TOPBuilder\vendors\Counter-Up\waypoints.min.js" />
+    <Content Include="TOPBuilder\vendors\font-awesome\css\font-awesome.min.css" />
+    <Content Include="TOPBuilder\vendors\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="TOPBuilder\vendors\isotope\imagesloaded.pkgd.min.js" />
+    <Content Include="TOPBuilder\vendors\isotope\isotope.pkgd.min.js" />
+    <Content Include="TOPBuilder\vendors\linearicons\fonts\Linearicons-Free.svg" />
+    <Content Include="TOPBuilder\vendors\linearicons\Linearicons.css" />
+    <Content Include="TOPBuilder\vendors\map\topbuilder_map.min.js" />
+    <Content Include="TOPBuilder\vendors\owl_carousel\owl.carousel.css" />
+    <Content Include="TOPBuilder\vendors\owl_carousel\owl.carousel.min.js" />
+    <Content Include="TOPBuilder\vendors\popup\lightbox.css" />
+    <Content Include="TOPBuilder\vendors\popup\lightbox.min.js" />
+    <Content Include="TOPBuilder\vendors\stellar\jquery.stellar.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62053</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62053/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
