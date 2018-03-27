@@ -117,9 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="TOPBuilder\404.html" />
-    <Content Include="TOPBuilder\about-2.html" />
     <Content Include="TOPBuilder\about.html" />
-    <Content Include="TOPBuilder\blog-2.html" />
     <Content Include="TOPBuilder\blog.html" />
     <Content Include="TOPBuilder\contact.html" />
     <Content Include="TOPBuilder\css\404.css" />
@@ -198,7 +196,6 @@
     <Content Include="TOPBuilder\images\testimonial-2.jpg" />
     <Content Include="TOPBuilder\images\testimonial-3.jpg" />
     <Content Include="TOPBuilder\images\testimonial-4.jpg" />
-    <Content Include="TOPBuilder\index-2.html" />
     <Content Include="TOPBuilder\index.html" />
     <Content Include="TOPBuilder\js\bootstrap.min.js" />
     <Content Include="TOPBuilder\js\google_map.js" />
@@ -207,7 +204,6 @@
     <Content Include="TOPBuilder\js\min\theme.min.js" />
     <Content Include="TOPBuilder\js\respond.min.js" />
     <Content Include="TOPBuilder\js\theme.js" />
-    <Content Include="TOPBuilder\services-2.html" />
     <Content Include="TOPBuilder\services.html" />
     <Content Include="TOPBuilder\vendors\animate\animate.css" />
     <Content Include="TOPBuilder\vendors\animate\wow.min.js" />
